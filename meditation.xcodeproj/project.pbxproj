@@ -11,6 +11,13 @@
 		182728B1289593A800DB6A5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182728B0289593A800DB6A5C /* ContentView.swift */; };
 		182728B3289593AF00DB6A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182728B2289593AF00DB6A5C /* Assets.xcassets */; };
 		182728B6289593AF00DB6A5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182728B5289593AF00DB6A5C /* Preview Assets.xcassets */; };
+		182728BD2895BD2800DB6A5C /* mediatationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182728BC2895BD2800DB6A5C /* mediatationView.swift */; };
+		182728BF2898117C00DB6A5C /* playerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182728BE2898117C00DB6A5C /* playerview.swift */; };
+		182728C72899562A00DB6A5C /* medatation model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182728C62899562A00DB6A5C /* medatation model.swift */; };
+		182728C928995D8E00DB6A5C /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182728C828995D8E00DB6A5C /* extension.swift */; };
+		1871CA8F28AFB44400AC62EC /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CA8E28AFB44400AC62EC /* Play.swift */; };
+		1871CA9128B12D2D00AC62EC /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871CA9028B12D2C00AC62EC /* AudioManager.swift */; };
+		1871CA9328B1372300AC62EC /* jermaine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1871CA9228B1372300AC62EC /* jermaine.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		182728B0289593A800DB6A5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		182728B2289593AF00DB6A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182728B5289593AF00DB6A5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		182728BC2895BD2800DB6A5C /* mediatationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediatationView.swift; sourceTree = "<group>"; };
+		182728BE2898117C00DB6A5C /* playerview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerview.swift; sourceTree = "<group>"; };
+		182728C62899562A00DB6A5C /* medatation model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "medatation model.swift"; sourceTree = "<group>"; };
+		182728C828995D8E00DB6A5C /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		1871CA8E28AFB44400AC62EC /* Play.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play.swift; sourceTree = "<group>"; };
+		1871CA9028B12D2C00AC62EC /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		1871CA9228B1372300AC62EC /* jermaine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jermaine.mp3; sourceTree = "<group>"; };
+		1871CA9428B13A1700AC62EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +66,10 @@
 		182728AD289593A800DB6A5C /* meditation */ = {
 			isa = PBXGroup;
 			children = (
+				1871CA9428B13A1700AC62EC /* Info.plist */,
+				1871CA9628B285FE00AC62EC /* Model */,
 				182728AE289593A800DB6A5C /* meditationApp.swift */,
-				182728B0289593A800DB6A5C /* ContentView.swift */,
-				182728B2289593AF00DB6A5C /* Assets.xcassets */,
+				1871CA9528B2859F00AC62EC /* Views */,
 				182728B4289593AF00DB6A5C /* Preview Content */,
 			);
 			path = meditation;
@@ -62,9 +78,32 @@
 		182728B4289593AF00DB6A5C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				182728B2289593AF00DB6A5C /* Assets.xcassets */,
+				1871CA9228B1372300AC62EC /* jermaine.mp3 */,
 				182728B5289593AF00DB6A5C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1871CA9528B2859F00AC62EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				182728BC2895BD2800DB6A5C /* mediatationView.swift */,
+				182728B0289593A800DB6A5C /* ContentView.swift */,
+				182728BE2898117C00DB6A5C /* playerview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1871CA9628B285FE00AC62EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				182728C62899562A00DB6A5C /* medatation model.swift */,
+				182728C828995D8E00DB6A5C /* extension.swift */,
+				1871CA9028B12D2C00AC62EC /* AudioManager.swift */,
+				1871CA8E28AFB44400AC62EC /* Play.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1871CA9328B1372300AC62EC /* jermaine.mp3 in Resources */,
 				182728B6289593AF00DB6A5C /* Preview Assets.xcassets in Resources */,
 				182728B3289593AF00DB6A5C /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182728C72899562A00DB6A5C /* medatation model.swift in Sources */,
+				182728C928995D8E00DB6A5C /* extension.swift in Sources */,
+				1871CA9128B12D2D00AC62EC /* AudioManager.swift in Sources */,
 				182728B1289593A800DB6A5C /* ContentView.swift in Sources */,
+				182728BD2895BD2800DB6A5C /* mediatationView.swift in Sources */,
+				1871CA8F28AFB44400AC62EC /* Play.swift in Sources */,
 				182728AF289593A800DB6A5C /* meditationApp.swift in Sources */,
+				182728BF2898117C00DB6A5C /* playerview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +317,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"meditation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +346,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"meditation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
